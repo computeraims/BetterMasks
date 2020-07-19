@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace Announcer
+namespace BetterMasks
 {
     public class Main : MonoBehaviour, IModuleNexus
     {
