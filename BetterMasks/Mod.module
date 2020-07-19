@@ -1,11 +1,11 @@
 {
 	"IsEnabled": true,
-	"Name": "Announcer Module",
+	"Name": "BetterMasks Module",
 	"Version": "0.0.0",
 	"Assemblies":
 	[
 		{
-			"Path": "/Announcer.dll",
+			"Path": "/BetterMasks.dll",
 			"Role": "Server"
 		}
 	]
