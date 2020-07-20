@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -27,11 +28,11 @@ namespace BetterMasks
             BetterMasksObject = new GameObject("BetterMasks");
             DontDestroyOnLoad(BetterMasksObject);
 
-            string path = Directory.GetCurrentDirectory();
+            string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
-            ConfigHelper.EnsureConfig($"{path}\\Modules\\BetterMasks\\config.json");
+            ConfigHelper.EnsureConfig($"{path}{Path.DirectorySeparatorChar}config.json");
 
-            Config = ConfigHelper.ReadConfig($"{path}\\Modules\\BetterMasks\\config.json");
+            Config = ConfigHelper.ReadConfig($"{path}{Path.DirectorySeparatorChar}config.json");
 
             BetterMasksObject.AddComponent<MasksManager>();
         }
