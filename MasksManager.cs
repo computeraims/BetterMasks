@@ -23,12 +23,8 @@ namespace BetterMasks
                         return;
                     }
 
-                    //Console.WriteLine(thingLocated.player.clothing.mask);
-                    //Console.WriteLine(thingLocated.player.name);
-
                     if (thingLocated.player.clothing.mask != 0)
                     {
-                        //Console.WriteLine(player.player.isPluginWidgetFlagActive(EPluginWidgetFlags.ShowInteractWithEnemy));
                         if (player.player.isPluginWidgetFlagActive(EPluginWidgetFlags.ShowInteractWithEnemy))
                         {
                             if (player.isAdmin && Main.Config.adminOverride == true)
@@ -41,7 +37,6 @@ namespace BetterMasks
                     }
                     else
                     {
-                        //Console.WriteLine(player.player.isPluginWidgetFlagActive(EPluginWidgetFlags.ShowInteractWithEnemy));
                         if (!player.player.isPluginWidgetFlagActive(EPluginWidgetFlags.ShowInteractWithEnemy))
                         {
                             player.player.enablePluginWidgetFlag(EPluginWidgetFlags.ShowInteractWithEnemy);
