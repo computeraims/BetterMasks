@@ -7,4 +7,4 @@ Hide masked players names when looking at them
 adminOverride - true/false - Allow admins to see nameplates regardless of player settings
 
 # Support
-For plugin support join Discord https://discord.com/invite/ADUmgFt
+For plugin support join Discord https://discord.gg/CteHzWr
